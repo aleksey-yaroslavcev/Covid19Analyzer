@@ -1,0 +1,12 @@
+--style=break
+--indent=spaces=4
+--align-pointer=type
+--align-reference=type
+--convert-tabs
+--attach-namespaces
+--max-code-length=80
+--pad-oper
+--unpad-paren
+--add-braces
+--break-after-logical
+--pad-method-colon=all
