@@ -1,5 +1,7 @@
 #pragma once
 
+#include "Model/DailyReportModel.h"
+
 #include <QMainWindow>
 
 namespace Model {
@@ -20,9 +22,13 @@ public:
     MainWindow(Model::Data* data, QWidget* parent = NULL);
     ~MainWindow();
 
+private slots:
+    void on_comboBox_currentIndexChanged(int index);
+
 private:
     Ui::MainWindow* ui;
-    Model::Data* _data;
+    Model::Data* data_;
+    Model::DailyReportModel dailyReportModel_;
 };
 
 } // namespace View
